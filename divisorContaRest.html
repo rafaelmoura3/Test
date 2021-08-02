@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de conta de restaurante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="divisor.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="wrapper">
+                <label for="item" class="lbl">
+                    Grupo1
+                </label>
+                <div class="input-box">
+                    <span>R$</span>
+                    <input type="number" min="0.00" value="0.00" id="item" class="val">
+                    <span>Dividir Com N°</span>
+                    <input type="number" min="0" value="1" id="quantidade" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="Item2" class="lbl">
+                    Grupo2
+                </label>
+                <div class="input-box">
+                    <span>R$</span>
+                    <input type="number" min="0.00" value="0.00" id="item2" class="val">
+                    <span>Dividir Com N°</span>
+                    <input type="number" min="0" value="1" id="quantidade2" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Grupo3
+                </label>
+                <div class="input-box">
+                    <span>R$</span>
+                    <input type="number" min="0.00" value="0.00" id="item3" class="val">
+                    <span>Dividir Com N°</span>
+                    <input type="number" min="0" value="1" id="quantidade3" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Grupo4
+                </label>
+                <div class="input-box">
+                    <span>R$</span>
+                    <input type="number" min="0.00" value="0.00" id="item4" class="val">
+                    <span>Dividir Com N°</span>
+                    <input type="number" min="0" value="1" id="quantidade4" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Grupo5
+                </label>
+                <div class="input-box">
+                    <span>R$</span>
+                    <input type="number" min="0.00" value="0.00" id="item5" class="val">
+                    <span>Dividir Com N°</span>
+                    <input type="number" min="0" value="1" id="quantidade5" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Grupo6
+                </label>
+                <div class="input-box">
+                    <span>R$</span>
+                    <input type="number" min="0.00" value="0.00" id="item6" class="val">
+                    <span>Dividir Com N°</span>
+                    <input type="number" min="0" value="1" id="quantidade6" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Adicional de Gorjeta:
+                </label>
+                <div class="input-box">
+                    <span>10%</span>
+                    <input type="checkbox" id="checkbox-gorjeta" onclick="CalcularConta()">
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="lbl">Gorjeta Total</span>
+                <span id="tip-amount" value="0.00" class="val">
+                    R$0.00
+                </span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <span class="lbl">Valor Total</span>
+                <span id="valorTotal" min="0.00" value="0.00" class="val">  
+                </span>
+            </div>
+            <div class="wrapper">
+                <input type="submit" value="CalcularConta" id="clickMe" class="button1" onclick="CalcularConta()">   
+                </span>
+            </div>
+        </section>
+    <script src="divisor.js"></script>
+</body>
+</html>
